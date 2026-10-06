@@ -51,8 +51,8 @@
     "./vite/types": "./lib/vite.types.mjs"
   },
   "scripts": {
-    "build": "node api.js && pnpm gen-presets && obuild",
-    "dev": "node api.js && pnpm -C playground dev",
+    "build": "pnpm gen-presets && obuild",
+    "dev": "pnpm -C playground dev",
     "dev:build": "pnpm -C playground build",
     "dev:start": "node playground/.output/server/index.mjs",
     "gen-node-compat": "node scripts/gen-node-compat.ts",
